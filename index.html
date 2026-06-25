@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pannalal Omprakash & Sons - Patna's ultimate wholesale bazaar and one-stop destination for women's ethnic wear. Shop premium Lehengas, Sarees, Suits, and Indo-Western.">
+  <meta name="keywords" content="Pannalal Omprakash, Pannalal Patna, ethnic wear Patna, wholesale sarees Patna, designer lehengas Patna, women suits Patna, Indo Western Patna, wholesale market Patna">
+  <meta name="author" content="Pannalal Omprakash & Sons">
+  
+  <title>Pannalal Omprakash & Sons | Women's Ethnic Wear Wholesale Bazaar | Patna</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2.3">
+  
+  <!-- Favicon (using SVG Logo) -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+
+  <!-- -------------------------------------------------------------
+       HEADER & NAVIGATION
+  ------------------------------------------------------------- -->
+  <header>
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#" class="logo-container" id="nav-logo">
+        <div class="logo-icon">
+          <img src="assets/logo.png" alt="Pannalal Omprakash & Sons Logo Icon">
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">PANNALAL</span>
+          <span class="logo-subtitle">Omprakash &amp; Sons</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Our Heritage</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#catalog" class="nav-link">Catalog</a></li>
+          <li><a href="#contact" class="nav-link">Visit Store</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Cart & Toggle) -->
+      <div class="nav-actions">
+        <!-- Inquiry Cart trigger -->
+        <button class="nav-icon-btn" id="cart-toggle" aria-label="Open Inquiry Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge" id="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- -------------------------------------------------------------
+       HERO SECTION
+  ------------------------------------------------------------- -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <!-- Text details -->
+      <div class="hero-content">
+        <span class="hero-tagline">The Wholesale Bazaar • Patna</span>
+        <h1 class="hero-title">Elevating Indian Heritage Fashion</h1>
+        <p class="hero-description">Your premier destination for luxury women’s ethnic wear. Explore our exclusive wholesale collections of Handcrafted Lehengas, Banarasi Sarees, Designer Suits, and Modern Indo-Western wear.</p>
+        <div class="hero-btns">
+          <a href="#catalog" class="btn btn-gold">Explore Collections</a>
+          <a href="#contact" class="btn btn-primary">Wholesale Inquiry</a>
+        </div>
+      </div>
+      
+      <!-- Visual Collage - Animated Stacked Card Carousel -->
+      <div class="hero-showcase">
+        <!-- Stacked Card Deck -->
+        <div class="card-stack" id="card-stack">
+          <div class="stack-card card-pos-3">
+            <img src="assets/real_suit.jpg" alt="Designer Suit Collection">
+          </div>
+          <div class="stack-card card-pos-2">
+            <img src="assets/real_pink_saree.jpg" alt="Pink Embroidered Saree">
+          </div>
+          <div class="stack-card card-pos-1">
+            <img src="assets/real_lehenga.jpg" alt="Bridal Lehenga Collection">
+          </div>
+          <div class="stack-card card-pos-0 active">
+            <img src="assets/real_saree.jpg" alt="Black Sequin Saree">
+          </div>
+        </div>
+        <!-- Dot indicators -->
+        <div class="stack-dots">
+          <span class="stack-dot active" data-idx="0"></span>
+          <span class="stack-dot" data-idx="1"></span>
+          <span class="stack-dot" data-idx="2"></span>
+          <span class="stack-dot" data-idx="3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       CATEGORIES SECTION
+  ------------------------------------------------------------- -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-title-container">
+        <span class="section-subtitle">Exquisite Range</span>
+        <h2 class="section-title">Shop By Category</h2>
+        <div class="ornament">
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="categories-grid">
+        <!-- Lehenga 1 (Bridal) -->
+        <div class="category-card" onclick="document.querySelector('[data-filter=\'lehengas\']').click(); document.getElementById('catalog').scrollIntoView();">
+          <img src="assets/category_lehenga.jpg" class="category-img" alt="Bridal Lehengas">
+          <div class="category-overlay">
+            <h3 class="category-title">Bridal Lehengas</h3>
+            <span class="category-link">View Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Lehenga 2 (Festive) -->
+        <div class="category-card" onclick="document.querySelector('[data-filter=\'lehengas\']').click(); document.getElementById('catalog').scrollIntoView();">
+          <img src="assets/category_saree.png" class="category-img" alt="Festive Lehengas">
+          <div class="category-overlay">
+            <h3 class="category-title">Festive Lehengas</h3>
+            <span class="category-link">View Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Lehenga 3 (Rani Pink Silk) -->
+        <div class="category-card" onclick="document.querySelector('[data-filter=\'lehengas\']').click(); document.getElementById('catalog').scrollIntoView();">
+          <img src="assets/category_suit.jpg" class="category-img" alt="Rani Pink Lehengas">
+          <div class="category-overlay">
+            <h3 class="category-title">Rani Pink Lehengas</h3>
+            <span class="category-link">View Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Lehenga 4 (Ivory Chikankari) -->
+        <div class="category-card" onclick="document.querySelector('[data-filter=\'lehengas\']').click(); document.getElementById('catalog').scrollIntoView();">
+          <img src="assets/category_indowestern.png" class="category-img" alt="Ivory Lehenga Gowns">
+          <div class="category-overlay">
+            <h3 class="category-title">Ivory Lehenga Gowns</h3>
+            <span class="category-link">View Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       HERITAGE / ABOUT US SECTION
+  ------------------------------------------------------------- -->
+  <section class="heritage" id="about">
+    <div class="container heritage-grid">
+      <!-- Framed Image -->
+      <div class="heritage-img-container">
+        <div class="heritage-frame">
+          <img src="assets/storefront.png" class="heritage-img" alt="Pannalal Omprakash & Sons Patna Storefront Entrance">
+        </div>
+      </div>
+
+      <!-- About Details -->
+      <div>
+        <span class="heritage-tagline">Three Generations of Trust</span>
+        <h2 class="heritage-title">A Legacy Carried Forward</h2>
+        <p class="heritage-text">Pannalal Omprakash &amp; Sons is a heritage brand built on three generations of trust, craftsmanship, and customer loyalty. Founded by our grandfather, Pannalal Omprakash, the business was later carried forward by our father and uncle, and today continues to grow under the next generation.<br><br>Known for our timeless sarees and suits, we have evolved into a complete destination for women's fashion, offering an expanded collection of designer suits, ethnic wear, and modern Indo-Western styles. Every piece is carefully selected to reflect elegance, comfort, quality, and authenticity—values that have defined our brand for decades.</p>
+        
+        <!-- Features Grid -->
+        <div class="heritage-features">
+          <div class="feature-box">
+            <i class="fas fa-history feature-icon"></i>
+            <div>
+              <h3 class="feature-title">Family Legacy</h3>
+              <p class="feature-desc">Nurtured across three generations, bringing decades of apparel expertise and trust to our clients.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <i class="fas fa-store feature-icon"></i>
+            <div>
+              <h3 class="feature-title">One-Stop Store</h3>
+              <p class="feature-desc">A complete curated wardrobe of traditional Banarasi sarees, designer suits, and modern fusion wear.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <i class="fas fa-tags feature-icon"></i>
+            <div>
+              <h3 class="feature-title">Mid-Range Value</h3>
+              <p class="feature-desc">Accessible, elegant ethnic fashion with honest and reasonable pricing for every occasion.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <i class="fas fa-heart feature-icon"></i>
+            <div>
+              <h3 class="feature-title">Trusted Quality</h3>
+              <p class="feature-desc">Selected and curated collections focusing on premium fabrics that resonate with women of all ages.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       PRODUCT CATALOG SECTION
+  ------------------------------------------------------------- -->
+  <section class="catalog" id="catalog">
+    <div class="container">
+      <div class="section-title-container">
+        <span class="section-subtitle">Our Wardrobe</span>
+        <h2 class="section-title">The Seasonal Catalog</h2>
+        <div class="ornament">
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Search & Filters Container -->
+      <div class="catalog-controls">
+        <!-- Search bar -->
+        <div class="search-bar-container">
+          <input type="text" id="search-input" class="search-input" placeholder="Search by design, fabric, code, or embroidery...">
+          <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <!-- Filter tabs -->
+        <ul class="filter-menu">
+          <li><button class="filter-btn active" data-filter="all">All Collection</button></li>
+          <li><button class="filter-btn" data-filter="lehengas">Lehengas</button></li>
+          <li><button class="filter-btn" data-filter="sarees">Sarees</button></li>
+          <li><button class="filter-btn" data-filter="suits">Suits</button></li>
+          <li><button class="filter-btn" data-filter="indowestern">Indo-Western</button></li>
+        </ul>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div class="product-grid" id="product-grid">
+        <!-- Rendered by JavaScript dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       INSTAGRAM REELS SECTION
+  ------------------------------------------------------------- -->
+  <section class="instagram-feed" id="instagram">
+    <div class="container">
+      <div class="section-title-container">
+        <span class="section-subtitle">Insta Reels</span>
+        <h2 class="section-title">Seen On Instagram</h2>
+        <div class="ornament">
+          <span class="dot"></span>
+        </div>
+      </div>
+      
+      <div class="carousel-container">
+        <button class="carousel-nav-btn prev-btn" id="insta-prev" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="insta-track">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <div class="embed-card">
+                <div class="spinner"></div>
+                <iframe src="https://www.instagram.com/reel/DXlTIfyjL-j/embed/" frameborder="0" scrolling="no" allowtransparency="true" onload="this.parentNode.querySelector('.spinner').style.display='none'"></iframe>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="embed-card">
+                <div class="spinner"></div>
+                <iframe src="https://www.instagram.com/reel/DYeuU5kJapK/embed/" frameborder="0" scrolling="no" allowtransparency="true" onload="this.parentNode.querySelector('.spinner').style.display='none'"></iframe>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="embed-card">
+                <div class="spinner"></div>
+                <iframe src="https://www.instagram.com/reel/DWY1DRppFaE/embed/" frameborder="0" scrolling="no" allowtransparency="true" onload="this.parentNode.querySelector('.spinner').style.display='none'"></iframe>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+              <div class="embed-card">
+                <div class="spinner"></div>
+                <iframe src="https://www.instagram.com/reel/DZCFQJ4yiyj/embed/" frameborder="0" scrolling="no" allowtransparency="true" onload="this.parentNode.querySelector('.spinner').style.display='none'"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-nav-btn next-btn" id="insta-next" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       VISIT & CONTACT SECTION
+  ------------------------------------------------------------- -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Information Card -->
+        <div class="contact-info-card">
+          <div>
+            <h3 class="contact-card-title">Pannalal Omprakash &amp; Sons</h3>
+            <ul class="contact-list">
+              <li class="contact-item-detail">
+                <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <h4 class="contact-item-title">Our Address</h4>
+                  <p class="contact-item-desc">J583+CH2, Birla Mandir Rd,<br>Dariyapur Gola, Bakarganj,<br>Patna, Bihar - 800004</p>
+                </div>
+              </li>
+              <li class="contact-item-detail">
+                <div class="contact-icon-wrap"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <h4 class="contact-item-title">Call / WhatsApp Inquiry</h4>
+                  <p class="contact-item-desc">+91 99318 67176</p>
+                </div>
+              </li>
+              <li class="contact-item-detail">
+                <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <h4 class="contact-item-title">Business Email</h4>
+                  <p class="contact-item-desc">info@pannalalomprakash.com</p>
+                </div>
+              </li>
+              <li class="contact-item-detail">
+                <div class="contact-icon-wrap"><i class="fas fa-clock"></i></div>
+                <div>
+                  <h4 class="contact-item-title">Store Timings</h4>
+                  <p class="contact-item-desc">Monday - Saturday: 10:30 AM - 8:30 PM<br>Sunday: Closed</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social connections -->
+          <div>
+            <div class="contact-socials">
+              <a href="#" class="social-circle" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-circle" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/919931867176" target="_blank" class="social-circle" aria-label="WhatsApp Direct"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="social-circle" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card">
+          <h3 class="form-title">Send a Quick Inquiry</h3>
+          
+          <!-- Submit alert banner -->
+          <div class="form-alert form-alert-success" id="contact-alert"></div>
+          
+          <form id="contact-form" action="https://formsubmit.co/isharoka891@gmail.com" method="POST">
+            <!-- Hidden configuration fields for FormSubmit.co -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Inquiry (Pannalal Website)">
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" name="Name" class="form-control" required placeholder="e.g., Ananya Sharma">
+              </div>
+              <div class="form-group">
+                <label for="form-phone" class="form-label">Phone / WhatsApp Number</label>
+                <input type="tel" id="form-phone" name="Phone" class="form-control" required placeholder="e.g., +91 99318XXXXX">
+              </div>
+              <div class="form-group form-group-full">
+                <label for="form-email" class="form-label">Email Address (Optional)</label>
+                <input type="email" id="form-email" name="Email" class="form-control" placeholder="e.g., ananya@example.com">
+              </div>
+              <div class="form-group form-group-full">
+                <label for="form-inquiry-type" class="form-label">Inquiry Purpose</label>
+                <select id="form-inquiry-type" name="Inquiry Purpose" class="form-control" style="background-image: none;">
+                  <option value="Wholesale Purchase / Boutique Orders">Wholesale Purchase / Boutique Orders</option>
+                  <option value="Retail Purchase">Retail Purchase</option>
+                  <option value="Custom Bridal Design Request">Custom Bridal Design Request</option>
+                  <option value="Other Information">Other Information</option>
+                </select>
+              </div>
+              <div class="form-group form-group-full">
+                <label for="form-message" class="form-label">Your Requirements</label>
+                <textarea id="form-message" name="Requirements" class="form-control" required placeholder="Let us know what fabrics, designs or quantities you are interested in..."></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width: 100%;">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map Block Placeholder -->
+      <div class="map-wrap">
+        <div class="map-placeholder-bg">
+          <i class="fas fa-store" style="font-size: 3rem; color: var(--gold); margin-bottom: 20px;"></i>
+          <h3 class="map-placeholder-title">Visit Our Patna Showroom</h3>
+          <p class="map-placeholder-desc">Located at Birla Mandir Road, Dariyapur Gola, Bakarganj, Patna. Tap below to navigate directly using Google Maps or contact us for assistance.</p>
+          <a href="https://maps.google.com/?q=Pannalal+Omprakash+and+Sons+Birla+Mandir+Rd+Patna" target="_blank" class="btn btn-gold btn-sm" style="font-size: 0.8rem; padding: 10px 20px;">
+            <i class="fas fa-directions" style="margin-right: 8px;"></i>Get Directions on Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       INQUIRY CART DRAWER
+  ------------------------------------------------------------- -->
+  <div class="drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fas fa-shopping-bag" style="margin-right: 10px; color: var(--gold);"></i>Inquiry Cart</h3>
+      <button class="drawer-close" id="cart-close" aria-label="Close Inquiry Cart"><i class="fas fa-times"></i></button>
+    </div>
+    
+    <!-- Cart Body -->
+    <div class="drawer-body">
+      <div class="cart-items-list" id="cart-items">
+        <!-- Rendered by JavaScript dynamically -->
+      </div>
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="drawer-footer">
+      <div class="drawer-footer-row">
+        <span class="drawer-footer-label">Total Items</span>
+        <span class="drawer-footer-val" id="cart-total-count">0 items</span>
+      </div>
+      <button class="btn btn-gold" id="checkout-btn" style="width: 100%;" disabled>
+        <i class="fab fa-whatsapp" style="font-size: 1.1rem; margin-right: 10px;"></i>Send Inquiry on WhatsApp
+      </button>
+      <p class="cart-note">A drafted list will be sent to our WhatsApp team. We respond within 1-2 business hours.</p>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="cart-backdrop"></div>
+
+  <!-- -------------------------------------------------------------
+       PRODUCT DETAILS MODAL
+  ------------------------------------------------------------- -->
+  <div class="modal" id="product-modal" style="display: none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+      
+      <!-- Left side image -->
+      <div class="modal-img-column">
+        <img src="" class="modal-img" id="modal-img" alt="Product Zoom Detail">
+      </div>
+
+      <!-- Right side information -->
+      <div class="modal-info-column">
+        <span class="modal-category" id="modal-category">Category</span>
+        <h3 class="modal-title" id="modal-title">Product Title</h3>
+        
+        <div class="modal-price-wrap">
+          <span class="modal-price-label">EST. Wholesale Price:</span>
+          <span class="modal-price" id="modal-price">Price</span>
+        </div>
+
+        <p class="modal-desc" id="modal-desc">Description details...</p>
+
+        <!-- Product specifications -->
+        <ul class="modal-details-list">
+          <li><strong>Fabric:</strong> <span id="modal-fabric">Silk</span></li>
+          <li><strong>Embroidery:</strong> <span id="modal-embroidery">Zari</span></li>
+          <li><strong>Colors:</strong> <span id="modal-colors">Wine, Red</span></li>
+          <li><strong>Code:</strong> <span id="modal-code">PL-101</span></li>
+        </ul>
+
+        <!-- Modal CTA Action Buttons -->
+        <div class="modal-actions">
+          <button class="btn btn-secondary" id="modal-add-cart-btn"><i class="fas fa-plus" style="margin-right: 8px;"></i>Add To Cart</button>
+          <button class="btn btn-gold" id="modal-whatsapp-btn"><i class="fab fa-whatsapp" style="font-size: 1.1rem; margin-right: 8px;"></i>Enquire Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------------------------------------------------
+       FOOTER
+  ------------------------------------------------------------- -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- About -->
+      <div>
+        <div class="logo-container" style="margin-bottom: 20px;">
+          <div class="logo-icon">
+            <img src="assets/logo.png" alt="Pannalal Omprakash & Sons Logo Icon" style="height:50px;">
+          </div>
+          <div class="logo-text">
+            <span class="logo-title" style="font-size:1.1rem;">PANNALAL</span>
+            <span class="logo-subtitle" style="font-size:0.55rem;">Omprakash &amp; Sons</span>
+          </div>
+        </div>
+        <p class="footer-about-desc">Patna's leading wholesale bazaar and exclusive showroom for premium hand-crafted ladies ethnic apparel. Dedicated to heritage quality, trusted transactions, and fast shipping facilities since generations.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="footer-col-title">Quick Navigation</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="#home">Home</a></li>
+          <li class="footer-link-item"><a href="#about">Our Heritage</a></li>
+          <li class="footer-link-item"><a href="#categories">Featured Categories</a></li>
+          <li class="footer-link-item"><a href="#catalog">Active Catalog</a></li>
+          <li class="footer-link-item"><a href="#contact">Contact &amp; Location</a></li>
+        </ul>
+      </div>
+
+      <!-- Collections -->
+      <div>
+        <h3 class="footer-col-title">Collections</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="#catalog" onclick="document.querySelector('[data-filter=\'lehengas\']').click();">Bridal Lehengas</a></li>
+          <li class="footer-link-item"><a href="#catalog" onclick="document.querySelector('[data-filter=\'sarees\']').click();">Banarasi Silk Sarees</a></li>
+          <li class="footer-link-item"><a href="#catalog" onclick="document.querySelector('[data-filter=\'suits\']').click();">Designer Suit Sets</a></li>
+          <li class="footer-link-item"><a href="#catalog" onclick="document.querySelector('[data-filter=\'indowestern\']').click();">Indo-Western Fusion</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info & Newsletter -->
+      <div>
+        <h3 class="footer-col-title">Newsletter &amp; Contact</h3>
+        <ul class="footer-contact-info" style="margin-bottom: 20px;">
+          <li><i class="fas fa-map-marker-alt"></i> Birla Mandir Rd, Bakarganj, Patna</li>
+          <li><i class="fas fa-phone-alt"></i> +91 99318 67176</li>
+        </ul>
+        <p class="footer-about-desc" style="margin-bottom: 10px; font-size:0.8rem;">Subscribe to receive updates on new catalog entries and seasonal discount lists.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+          <input type="email" class="newsletter-input" required placeholder="Enter Email Address">
+          <button type="submit" class="newsletter-btn">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom copyright -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Pannalal Omprakash &amp; Sons. All Rights Reserved. Patna, Bihar.</p>
+      <p style="opacity: 0.7;">Designed with <i class="fas fa-heart" style="color: var(--gold);"></i> for Indian Heritage Fashion</p>
+    </div>
+  </footer>
+
+  <!-- Script Controller -->
+  <script src="app.js?v=1.2"></script>
+</body>
+</html>

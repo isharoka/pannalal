@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <!-- Background color (Burgundy) -->
+  <rect width="100%" height="100%" fill="#3d0c1b"/>
+  
+  <!-- Definitions for gradients and shadows -->
+  <defs>
+    <!-- Gold Gradient for Logo and Text -->
+    <linearGradient id="gold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A059" />
+      <stop offset="30%" stop-color="#FDF0CD" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#F3E5AB" />
+      <stop offset="100%" stop-color="#A67C1E" />
+    </linearGradient>
+    
+    <!-- Drop Shadow for Logo Mark -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Main Logo Mark Group -->
+  <g transform="translate(0, 20)">
+    <!-- Stylized P Icon -->
+    <g filter="url(#shadow)">
+      <!-- Outer P outline with Serif cap and base -->
+      <path d="M 360 410 
+               L 330 410 
+               C 322 410, 318 406, 318 398 
+               L 318 395 
+               C 318 395, 335 395, 345 395 
+               C 352 395, 355 390, 355 380 
+               L 355 170 
+               C 355 160, 352 155, 345 155 
+               C 335 155, 318 155, 318 155 
+               L 318 152 
+               L 318 140 
+               L 440 140 
+               C 485 140, 520 165, 520 220 
+               C 520 275, 485 300, 440 300 
+               L 388 300 
+               C 380 300, 375 305, 375 315 
+               L 375 380 
+               C 375 390, 378 395, 385 395 
+               C 395 395, 412 395, 412 395 
+               L 412 398 
+               C 412 406, 408 410, 400 410 
+               Z" 
+            fill="none" 
+            stroke="url(#gold)" 
+            stroke-width="8" 
+            stroke-linejoin="round"/>
+
+      <!-- Inside the P: Hair Outline and Face Silhouette -->
+      <!-- Hair Outline (flows along the inner left of the loop) -->
+      <path d="M 370 170
+               C 385 170, 400 180, 405 195
+               C 410 210, 400 230, 395 245
+               C 390 260, 395 275, 400 285
+               C 405 292, 410 295, 415 298
+               C 400 302, 388 290, 382 275
+               C 375 255, 368 220, 368 195
+               C 368 180, 369 172, 370 170 Z" 
+            fill="url(#gold)" 
+            opacity="0.85"/>
+      
+      <!-- Face Silhouette (looking right) -->
+      <path d="M 405 195 
+               C 412 195, 420 196, 428 198
+               C 434 200, 440 205, 442 212
+               C 445 220, 442 232, 445 240
+               C 448 248, 458 252, 462 254
+               C 466 256, 470 258, 466 262
+               C 462 266, 452 267, 450 270
+               C 448 273, 454 276, 456 278
+               C 458 280, 454 285, 450 287
+               C 446 289, 440 292, 438 295
+               C 435 298, 428 304, 422 307
+               C 415 310, 410 310, 408 304
+               C 406 298, 412 292, 414 282
+               C 416 272, 410 262, 405 250
+               C 400 240, 398 230, 400 218
+               C 402 206, 403 200, 405 195
+               Z" 
+            fill="url(#gold)"/>
+    </g>
+
+    <!-- Brand Name Text -->
+    <!-- PANNALAL -->
+    <text x="400" y="490" 
+          font-family="'Playfair Display', 'Cinzel', 'Georgia', serif" 
+          font-size="62" 
+          font-weight="bold" 
+          fill="url(#gold)" 
+          text-anchor="middle" 
+          letter-spacing="4">PANNALAL</text>
+
+    <!-- OMPRAKASH & SONS -->
+    <text x="400" y="550" 
+          font-family="'Montserrat', 'Inter', 'Arial', sans-serif" 
+          font-size="34" 
+          font-weight="500" 
+          fill="url(#gold)" 
+          text-anchor="middle" 
+          letter-spacing="6">OMPRAKASH &amp; SONS</text>
+
+    <!-- Gold separator bar -->
+    <line x1="280" y1="575" x2="520" y2="575" stroke="url(#gold)" stroke-width="3"/>
+
+    <!-- THE WHOLESALE BAZAAR Banner -->
+    <g transform="translate(0, 10)">
+      <!-- Banner Gold background -->
+      <rect x="230" y="590" width="340" height="40" fill="url(#gold)" rx="4"/>
+      <!-- Banner Text -->
+      <text x="400" y="616" 
+            font-family="'Montserrat', 'Inter', 'Arial', sans-serif" 
+            font-size="18" 
+            font-weight="bold" 
+            fill="#3d0c1b" 
+            text-anchor="middle" 
+            letter-spacing="5">THE WHOLESALE BAZAAR</text>
+    </g>
+  </g>
+</svg>
