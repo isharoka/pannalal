@@ -1785,7 +1785,7 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 4fr 2fr 2fr 4fr;
+  grid-template-columns: 4.5fr 2.5fr 5fr;
   gap: 40px;
   margin-bottom: 60px;
 }
@@ -1950,6 +1950,9 @@ footer {
   }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid > div:last-child {
+    grid-column: span 2;
   }
 }
 
@@ -2233,7 +2236,7 @@ footer {
     margin-top: 15px;
     gap: 12px;
   }
-  .footer-grid > div:nth-child(4) {
+  .footer-grid > div:last-child {
     grid-column: span 2;
     margin-top: 10px;
   }
