@@ -138,13 +138,7 @@ button, input, textarea, select {
   letter-spacing: 3px;
 }
 
-.section-title-container.dark-bg .section-subtitle {
-  color: var(--gold-light);
-}
 
-.section-title-container.dark-bg .section-title {
-  color: var(--text-light);
-}
 
 .ornament {
   display: flex;
@@ -697,8 +691,17 @@ header.scrolled .nav-container {
 /* -------------------------------------------------------------
    HERITAGE / ABOUT SECTION
 ------------------------------------------------------------- */
+.heritage-header {
+  padding: 100px 0 0;
+  background-color: var(--champagne);
+}
+
+.heritage-header .section-title-container {
+  margin-bottom: 0;
+}
+
 .heritage {
-  padding: 100px 0;
+  padding: 60px 0 100px;
   background-color: var(--burgundy-dark);
   color: var(--text-light);
   position: relative;
@@ -2285,5 +2288,13 @@ footer {
   .modal-actions {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .heritage-header {
+    padding: 50px 0 0;
+  }
+
+  .heritage {
+    padding: 30px 0 50px;
   }
 }
