@@ -2160,13 +2160,20 @@ footer {
     display: none;
   }
   .heritage-features {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 12px;
   }
   .feature-box {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .feature-title {
+    font-size: 1rem;
+  }
+  .feature-desc {
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
