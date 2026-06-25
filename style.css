@@ -2110,16 +2110,51 @@ footer {
     width: 100%;
   }
   .categories-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .category-card {
+    height: 220px;
+  }
+  .category-overlay {
+    padding: 15px;
+  }
+  .category-title {
+    font-size: 1.1rem;
+    transform: translateY(0);
+    margin-bottom: 0;
+  }
+  .category-link {
+    display: none;
   }
   .product-grid {
     grid-template-columns: 1fr;
   }
+  .heritage-grid {
+    text-align: center;
+  }
+  .heritage-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .heritage-features {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .feature-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+  .footer-grid > div:nth-child(1) {
+    grid-column: span 2;
+  }
+  .footer-grid > div:nth-child(4) {
+    grid-column: span 2;
   }
   
   /* Compact cards padding */
