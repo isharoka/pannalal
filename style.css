@@ -2156,6 +2156,9 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  .heritage-text-extra {
+    display: none;
+  }
   .heritage-features {
     grid-template-columns: 1fr;
     gap: 20px;
