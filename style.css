@@ -2183,36 +2183,48 @@ footer {
     line-height: 1.4;
   }
   footer {
-    padding: 45px 0 25px;
+    padding: 60px 0 35px;
   }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px 15px;
-    margin-bottom: 30px;
+    gap: 35px 20px;
+    margin-bottom: 40px;
   }
   .footer-grid > div:nth-child(1) {
     grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer-grid > div:nth-child(1) .contact-socials {
+    justify-content: center;
+    margin-top: 15px;
+    gap: 12px;
   }
   .footer-grid > div:nth-child(4) {
     grid-column: span 2;
+    margin-top: 10px;
   }
   .footer-about-desc {
     display: none;
   }
   .footer-col-title {
-    font-size: 1.05rem;
-    margin-bottom: 15px;
-    padding-bottom: 4px;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    padding-bottom: 6px;
   }
   .footer-links {
-    gap: 8px;
+    gap: 12px;
   }
   .footer-link-item a {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
   .footer-contact-info {
-    gap: 10px;
-    font-size: 0.8rem;
+    gap: 16px;
+    font-size: 0.85rem;
+    line-height: 1.5;
   }
   
   /* Compact cards padding */
