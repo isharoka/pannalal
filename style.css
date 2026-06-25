@@ -729,9 +729,33 @@ header.scrolled .nav-container {
   max-width: 450px;
   height: auto;
   border: 2px solid var(--gold);
-  padding: 12px;
+  padding: 24px 20px 20px;
   position: relative;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  background-color: var(--text-light);
+}
+
+.heritage-frame-tagline {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.heritage-frame-title {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--burgundy-dark);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 1.25;
 }
 
 .heritage-frame::after {
