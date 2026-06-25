@@ -1565,8 +1565,9 @@ header.scrolled .nav-container {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 4.5fr 7.5fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+  align-items: stretch;
 }
 
 .contact-info-card {
@@ -1728,12 +1729,11 @@ textarea.form-control {
 
 /* Map placeholder */
 .map-wrap {
-  margin-top: 50px;
-  height: 350px;
   border: 2px solid var(--gold);
   box-shadow: 0 10px 25px var(--shadow-light);
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .map-placeholder-bg {
@@ -1842,6 +1842,16 @@ footer {
 .footer-contact-info li i {
   color: var(--gold);
   margin-top: 4px;
+}
+
+.footer-contact-info a {
+  color: inherit;
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.footer-contact-info a:hover {
+  color: var(--gold-light);
 }
 
 /* Newsletter */
@@ -2031,9 +2041,6 @@ footer {
     padding: 60px 0;
   }
 
-  .contact-info-card {
-    padding: 40px 30px;
-  }
 
   /* Prevent Instagram carousel buttons from overflowing the flex container */
   .instagram-feed .carousel-container {
@@ -2209,9 +2216,6 @@ footer {
   }
   
   /* Compact cards padding */
-  .contact-info-card {
-    padding: 30px 20px;
-  }
   .contact-form-card {
     padding: 30px 20px;
   }
