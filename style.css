@@ -1610,6 +1610,8 @@ header.scrolled .nav-container {
   font-size: 1.05rem;
   line-height: 1.5;
   font-weight: 400;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .contact-socials {
@@ -1684,6 +1686,7 @@ header.scrolled .nav-container {
   background-color: var(--champagne);
   transition: var(--transition-fast);
   color: var(--text-dark);
+  width: 100%;
 }
 
 .form-control:focus {
@@ -2045,6 +2048,25 @@ footer {
   .instagram-feed .carousel-nav-btn.next-btn {
     right: calc(50% - 55px);
   }
+
+  .instagram-feed .embed-card {
+    height: 550px;
+    max-height: 550px;
+  }
+  .instagram-feed .embed-card iframe {
+    height: 620px;
+  }
+
+  .map-wrap {
+    height: auto;
+    min-height: 350px;
+  }
+  .map-placeholder-bg {
+    position: relative;
+    height: auto;
+    min-height: 350px;
+    padding: 40px 20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2068,7 +2090,8 @@ footer {
     font-size: 2.2rem;
   }
   .contact-card-title {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 1.3;
   }
 
   .hero-btns {
