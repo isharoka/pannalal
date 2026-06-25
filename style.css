@@ -2142,19 +2142,39 @@ footer {
     padding: 12px;
     gap: 8px;
   }
+  .product-card .product-category {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
   .product-card .product-title {
-    font-size: 0.9rem;
-    line-height: 1.3;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 2.7em;
+    margin-bottom: 4px;
+  }
+  .product-card .product-price-label {
+    font-size: 0.7rem;
+  }
+  .product-card .product-price {
+    font-size: 1.05rem;
   }
   .product-card .product-meta {
     flex-direction: column;
     align-items: stretch;
-    gap: 8px;
-    padding-top: 10px;
+    gap: 6px;
+    padding-top: 8px;
   }
   .product-card .add-inquiry-btn {
     width: 100%;
     justify-content: center;
+    font-size: 0.75rem;
+    padding: 8px 12px;
   }
   .heritage-grid {
     text-align: center;
